@@ -1,0 +1,27 @@
+{% extends 'accounts/main.html' %} {% block content %}
+
+<br>
+
+<table class="striped centered highlight responsive-table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Category</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in products %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.category}}</td>
+            <td>{{i.price}}</td>
+        </tr>
+
+        {% endfor %}
+
+    </tbody>
+
+</table>
+
+{% endblock %}

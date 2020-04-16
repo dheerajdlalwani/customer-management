@@ -1,0 +1,72 @@
+{% extends 'accounts/main.html' %} {% block content %} {% include 'accounts/status.html' %}
+
+<br>
+
+<div class="row">
+    <div class="col m5 ">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">CUSTOMERS</span>
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                <table class="white-text responsive-table centered blue-grey ">
+                    <thead>
+                        <tr>
+                            <th>View</th>
+                            <th>Customer</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {% for customer in customers %}
+
+                        <tr>
+                            <td><a class="btn-floating btn-large waves-effect waves-light light-green" href="{% url 'customer' customer.id %}">View</a></td>
+                            <td>{{customer.name}}</td>
+                            <td>{{customer.phone}}</td>
+                        </tr>
+                        {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col m7 ">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">LAST 5 ORDERS</span>
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light red" href="{% url 'create_order' %}"><i class="material-icons">add</i></a>
+                <table class="white-text responsive-table centered blue-grey">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Date Ordered</th>
+                            <th>Status</th>
+                            <th>Update</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for order in orders %}
+
+                        <tr>
+                            <td>{{order.product}}</td>
+                            <td>{{order.date_created}}</td>
+                            <td>{{order.status}}</td>
+                            <td><a class="waves-effect waves-light btn light-blue" href="{% url 'update_order' order.id %}"><i class="material-icons right">update</i>Update</a></td>
+                            <td><a class="waves-effect waves-light btn red" href="{% url 'delete_order' order.id %}"><i class="material-icons right">delete</i>Delete</a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

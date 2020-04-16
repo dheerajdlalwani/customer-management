@@ -1,0 +1,113 @@
+{% extends 'accounts/main.html' %} {% block content %}
+
+<br>
+<br>
+
+<div class="row">
+
+    <div class="col m4">
+        <div class="card light-blue darken-3">
+            <div class="card-content white-text">
+                <span class="card-title">CUSTOMER:</span>
+
+                <h3>{{customer.name}}</h3>
+
+                <hr>
+                <div class="card-action center">
+                    <a class="waves-effect waves-light btn light-blue"><i class="material-icons right">update</i>Update Customer</a>
+                    <br>
+                    <br>
+                    <a class="waves-effect waves-light btn red"><i class="material-icons right">delete</i>Delete Customer</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col m4">
+        <div class="card light-blue">
+            <div class="card-content white-text">
+                <span class="card-title">CONTACT INFORMATION</span>
+                <hr>
+                <p>Email: {{customer.email}}</p>
+                <br>
+                <p>Phone: {{customer.phone}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col m4">
+        <div class="card light-blue lighten-2">
+            <div class="card-content white-text">
+                <span class="card-title">TOTAL ORDERS</span>
+                <hr>
+                <p style="text-align: center">{{order_count}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col s12">
+        <nav>
+            <div class="nav-wrapper cyan">
+                <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col m12 ">
+        <div class="card blue-grey darken-1 small">
+            <div class="card-content white-text">
+                <span class="card-title">LAST 5 ORDERS</span>
+
+                <table class="white-text responsive-table centered blue-grey">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Date Ordered</th>
+                            <th>Status</th>
+                            <th>Update</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {% for order in orders %}
+
+                        <tr>
+
+                            <td>{{order.product}}</td>
+                            <td>{{order.product.category}}</td>
+                            <td>{{order.date_created}}</td>
+                            <td>{{order.status}}</td>
+                            <td><a class="waves-effect waves-light btn light-blue" href="{% url 'update_order' order.id %}"><i class="material-icons right">update</i>Update</a></td>
+                            <td><a class="waves-effect waves-light btn red" href="{% url 'delete_order' order.id %}"><i class="material-icons right">delete</i>Delete</a></td>
+
+                        </tr>
+
+                        {% endfor %}
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
