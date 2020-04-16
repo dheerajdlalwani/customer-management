@@ -5,8 +5,22 @@
  
  The Name of the channel is ***Dennis Ivy***
  
- ## Link to the course
- - https://www.youtube.com/playlist?list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO
+ 
+ ## A few snaps from the snap shots:
+ ![](Project1.png)
+ ![](Project2.png)
+ ![](Project3.png)
+ ![](Project4.png)
+ ![](Project5.png)
+ 
+ ## Link to the relevant resources
+ - Main Tutorial Series
+    - https://www.youtube.com/playlist?list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO
+ - Official Django Docs
+    - https://docs.djangoproject.com/en/3.0/
+ - Brad Traversey's YouTube videos for Materialize CSS
+    - https://youtu.be/nqT8c5OFjEQ (Part 1)
+    - https://youtu.be/ZpduVPHZ5Aw (Part 2)
  
  ## Tech - Stack
  - Django  ==> _Backend_
@@ -15,7 +29,13 @@
  - CSS ==> _Frontend_
  - Materialize CSS ==> _Frontend_
  
- ## Stuff I learnt
+ ## Stuff I learnt from other sources
+ - Materialize framework (From Official docs and a Brads YouTube channel )
+ - Links provided above.
+ 
+ 
+ 
+ ## Stuff I learnt from the tutorial series
  - Getting Started with Django
  - Urls & Views
  - Templates & Inheritance
