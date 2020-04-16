@@ -7,7 +7,7 @@
 - Materialize CSS by Brad Traversy
    - Part 1: https://youtu.be/nqT8c5OFjEQ
    - Part 2: https://youtu.be/ZpduVPHZ5Aw  
-- [Harsh Kapadia's Git Basics Repository](https://github.com/HarshKapadia2/git_basics) (This really really helped me a lot!)
+- [Git Basics by Harsh Kapadia](https://github.com/HarshKapadia2/git_basics) (This really really helped me a lot!)
 
 ## Tech stack
 - Front end
