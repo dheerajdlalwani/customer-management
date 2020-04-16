@@ -1,0 +1,15 @@
+body
+{
+    background-color:#b2dfdb;
+}
+
+select
+{
+    display: unset;
+}
+
+label
+{
+	font-size: 30px;
+	color: #3e2723;
+}
