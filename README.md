@@ -14,13 +14,22 @@
  ![](Project5.png)
  
  ## Link to the relevant resources
- - Main Tutorial Series
+ 
+ - ###Main Tutorial Series
     - https://www.youtube.com/playlist?list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO
- - Official Django Docs
+    
+ - ###Official Django Docs
     - https://docs.djangoproject.com/en/3.0/
- - Brad Traversey's YouTube videos for Materialize CSS
+    
+ - ###Brad Traversey's YouTube videos for Materialize CSS
     - https://youtu.be/nqT8c5OFjEQ (Part 1)
     - https://youtu.be/ZpduVPHZ5Aw (Part 2)
+    
+ - ###Official Materialize CSS Docs
+    - https://materializecss.com/
+    
+ - ###Harsh Kapadia's Git Basics Repository (This really really helped me a lot!)
+    - https://github.com/HarshKapadia2/git_basics
  
  ## Tech - Stack
  - Django  ==> _Backend_
@@ -31,6 +40,8 @@
  
  ## Stuff I learnt from other sources
  - Materialize framework (From Official docs and a Brads YouTube channel )
+ - Git Basics
+ - TO BE CONTINUED...
  - Links provided above.
  
  
