@@ -1,6 +1,6 @@
 # customer-management
 - A simple **Customer Management webapp** created from a **Django** Tutorial.
-- Main code in the `CMS` folder.
+- Main code in the `code` folder.
 
 ## Resources
 - [Django project by Dennis Ivy](https://www.youtube.com/playlist?list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO) 
