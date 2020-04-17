@@ -17,8 +17,8 @@
    - Django
 
 ## A few snap shots of the project
-![](pictures/Project1.png)
-![](pictures/Project2.png)
-![](pictures/Project3.png)
-![](pictures/Project4.png)
-![](pictures/Project5.png)
+![](pictures/project_1.png)
+![](pictures/project_2.png)
+![](pictures/project_3.png)
+![](pictures/project_4.png)
+![](pictures/project_5.png)
