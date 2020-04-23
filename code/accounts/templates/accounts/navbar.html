@@ -1,5 +1,16 @@
 {% load static %}
 
+<style>
+    #welcomeMessage
+    {
+        padding: 5px;
+    }
+
+
+
+</style>
+
+
 <nav>
     <div class="nav-wrapper teal ">
         <a href="#!" class="brand-logo"> DL </a>
@@ -7,9 +18,18 @@
         <ul class="right hide-on-med-and-down">
             <li><a href="{% url 'home' %}">Dashboard</a></li>
             <li><a href="{% url 'products' %}">Products</a></li>
+            <li><a href="{% url 'logout' %} ">Logout</a></li>
         </ul>
     </div>
+
+
+
+
 </nav>
+
+<div class="card right blue-grey darken-2 white-text"> <p id="welcomeMessage">Hello, {{ request.user }}</p> </div>
+
+<br><br>
 
 <ul class="sidenav" id="mobile-demo">
     <li><a href="Dashboard.html">Dashboard</a></li>
