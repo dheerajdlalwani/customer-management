@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+/*
+    background-image: url(https://images.unsplash.com/photo-1542228846-2d791a09d7d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    
+*/
+    background-image: url(starrysky.png);
+    background-size: cover;
+    background-position: center;
+    font-family: cursive;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.title{
+    font-family: cursive;
+    padding-bottom: 20px;
+    margin: 0 0 20px 0;
+    border-bottom: dashed 1px #e6e6e6;
+}
+
+/*loginbox contains fields like username,password,email,register,link to login*/
+.loginbox{
+/*    along x ,margin is kept zero because we have used the align-content property */
+    margin: 70px 0px;
+    border: none;
+/*    border: 0px solid white;*/
+    align-content: center;
+    width: 320px;
+    background: black;
+/*    background: none;*/
+    height: 590px;
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-35%);
+    padding: 20px 20px 0px 20px;
+    color: white;
+    box-shadow: 1px 1px 40px;
+    border-radius: 10px;
+}
+.avatar{
+    background: white;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position:relative;
+    top: -10%;
+    left: calc(50% - 50px);    
+}
+
+h1{
+/*    this css is for company name*/
+    margin: 0;
+    padding: 0 0 20px 0;
+    text-align: center;
+    font-size: 22px; 
+}
+
+.loginbox p{
+/*    this css makes affects individual fields which are username email and password*/
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+/*log id for login form */
+#log{
+    margin: 70px 0px;
+    border: 0px solid white;
+    align-content: center;
+    width: 320px;
+    background: black;
+    height: auto;
+    box-shadow: 1px 1px 40px;
+    border-radius: 10px;
+/*    background: none;*/
+/*    border: none;*/
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-35%);
+    padding: 20px 20px 20px 20px;
+    color: white;
+}
+.loginbox input{
+    
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.loginbox input:active{
+    text-decoration: none;
+}
+.loginbox input[type = "text"], input[type = "password"]
+{
+    border: black;
+    border-bottom: 2px solid white;
+    background: black;
+    height: 40px;
+    font-size: 16px;
+}
+
+.loginbox input[type = "submit"]
+{    
+/*    register/login button*/
+    height: 50px;
+    position: relative;
+    display: block;
+    color: whitesmoke;
+    background-color: black;
+    border: solid 0px white;
+    border-radius: 60px;
+    border-width: 2px;
+    box-shadow: 0px 0px 20px;
+    font-weight: 1000;
+}
+
+.loginbox input[type = "submit"]:hover
+{
+    /*    reverses the color scheme when you hover*/
+    cursor: pointer;
+    background-color:aliceblue;
+    color: black;
+}
+
+.footer{
+    border: 1px solid white;
+    font-size: 12px;
+    padding:10px 2px 10px 2px;
+    text-align: center;
+    border-radius: 56px;
+    font-weight: 1000;
+}
+
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    color: azure;
+}
+
+
+.loginbox a:hover{
+    cursor: pointer;
+    color: blue;
+}
