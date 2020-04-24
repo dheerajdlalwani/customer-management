@@ -1,7 +1,23 @@
-<h1>Login</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/loginstyle.css' %}">
 
-<form action="" method="POST">
-    {% csrf_token %}
+</head>
+<body>
+   
+  
+    <div class="loginbox" id="log">
+        <img src="Avatar.png" class="avatar">
+        <h1 class="title">The DL and SM store</h1>
+         <form action="" method="POST">
+         
+         {% csrf_token %}
     <label for="username"><b>Username: </b></label>
     <input type="text" placeholder="Enter Username" name="username" required>
     <br><br>
@@ -17,6 +33,9 @@
 
 
     <p>New here? Sign Up! <a href="{% url 'register' %}">here</a></p>
+         
+         </form>
+    </div>
 
-
-</form>
+</body>
+</html>
